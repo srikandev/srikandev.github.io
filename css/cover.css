@@ -27,10 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #f9f9f9;
 }
 body {
   color: #fff;
@@ -51,6 +48,10 @@ body {
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -71,8 +72,10 @@ body {
  * Header
  */
 .masthead-brand {
-  margin-top: 10px;
+  margin-top: -10px;
   margin-bottom: 10px;
+  width: 240px;
+  height: auto;
 }
 
 .masthead-nav > li {
@@ -172,6 +175,9 @@ body {
     font-size: 3.715em !important;
     font-weight: bold;
   }
+  .lead {
+    padding: 0 100px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -182,8 +188,3 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .cover h1 {
-  font-size: 2.675em;
-  }
-}
